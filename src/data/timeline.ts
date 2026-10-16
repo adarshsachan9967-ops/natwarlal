@@ -1,0 +1,347 @@
+export type TimelineCategory = "political" | "trade" | "social" | "awards";
+
+export interface TimelineMilestone {
+  id: string;
+  year: string;
+  exactDate?: string;
+  titleHi: string;
+  titleEn: string;
+  organizationHi: string;
+  organizationEn: string;
+  roleHi: string;
+  roleEn: string;
+  descriptionHi: string;
+  descriptionEn: string;
+  category: TimelineCategory;
+  image?: string;
+  sourceNote?: string;
+}
+
+export const TIMELINE_MILESTONES: TimelineMilestone[] = [
+  {
+    id: "1984-agrawal-samaj",
+    year: "1984",
+    titleHi: "काशी अग्रवाल समाज की आजीवन सदस्यता",
+    titleEn: "Life Membership, Kashi Agrawal Samaj",
+    organizationHi: "काशी अग्रवाल समाज, वाराणसी",
+    organizationEn: "Kashi Agrawal Samaj, Varanasi",
+    roleHi: "आजीवन सदस्य",
+    roleEn: "Life Member",
+    descriptionHi: "युवावस्था में काशी के प्रतिष्ठित अग्रवाल समाज की आजीवन सदस्यता ग्रहण कर सामाजिक सेवा का संकल्प लिया।",
+    descriptionEn: "Enrolled as a Life Member of the prestigious Kashi Agrawal Samaj, commencing dedicated civic and community service.",
+    category: "social",
+    sourceNote: "PDF Page 2"
+  },
+  {
+    id: "1988-dawa-vyapar",
+    year: "1988–1992",
+    titleHi: "काशी दवा व्यापार संघ के संगठन मंत्री",
+    titleEn: "Organizational Secretary, Kashi Pharmaceutical Trade Association",
+    organizationHi: "काशी दवा व्यापार संघ, वाराणसी",
+    organizationEn: "Kashi Pharmaceutical Trade Association",
+    roleHi: "संगठन मंत्री",
+    roleEn: "Organizational Secretary",
+    descriptionHi: "दवा व्यापारियों के संगठन को सुदृढ़ किया और लाइसेंसिंग व कर-संबंधी समस्याओं के समाधान हेतु नेतृत्व प्रदान किया।",
+    descriptionEn: "Organized local pharmaceutical merchants and represented their operational concerns with municipal and state authorities.",
+    category: "trade",
+    sourceNote: "PDF Page 2"
+  },
+  {
+    id: "1992-yuva-vyapar",
+    year: "1992–1996",
+    titleHi: "काशी युवा व्यापार प्रतिनिधि मण्डल के उपाध्यक्ष",
+    titleEn: "Vice President, Kashi Youth Traders Representative Body",
+    organizationHi: "काशी युवा व्यापार प्रतिनिधि मण्डल",
+    organizationEn: "Kashi Youth Traders Representative Body",
+    roleHi: "उपाध्यक्ष",
+    roleEn: "Vice President",
+    descriptionHi: "वाराणसी के युवा व्यापारियों और नए उद्यमियों को संगठनात्मक मंच प्रदान किया और उनके अधिकारों के लिए संघर्ष किया।",
+    descriptionEn: "Spearheaded organizational initiatives for young merchants and aspiring entrepreneurs across Varanasi.",
+    category: "trade",
+    sourceNote: "PDF Page 2"
+  },
+  {
+    id: "1992-lohata-relief",
+    year: "1992",
+    titleHi: "लोहता दंगा प्रभावित राहत समिति सेवा",
+    titleEn: "Relief Committee Member, Riot-Affected Lohata Area",
+    organizationHi: "वाराणसी नागरिक राहत समिति",
+    organizationEn: "Varanasi Civic Relief Committee",
+    roleHi: "समिति सदस्य",
+    roleEn: "Committee Member",
+    descriptionHi: "वाराणसी के दंगाग्रस्त लोहता क्षेत्र में प्रभावित परिवारों को भोजन, राशन और आवश्यक चिकित्सा सामग्री उपलब्ध कराई।",
+    descriptionEn: "Served on the citizen relief committee providing medical aid, food supplies, and resettlement support in riot-hit Lohata.",
+    category: "social",
+    sourceNote: "PDF Page 2"
+  },
+  {
+    id: "1993-vaishya-mahasabha",
+    year: "1993–1995",
+    titleHi: "वैश्य महासभा के संगठन मंत्री",
+    titleEn: "Organizational Secretary, Vaishya Mahasabha",
+    organizationHi: "वैश्य महासभा",
+    organizationEn: "Vaishya Mahasabha",
+    roleHi: "संगठन मंत्री",
+    roleEn: "Organizational Secretary",
+    descriptionHi: "प्रदेश भर में वैश्य समाज के विभिन्न घटकों को एक सूत्र में पिरोने और सामाजिक जागरूकता बढ़ाने का कार्य किया।",
+    descriptionEn: "Traveled across districts to unify community wings and advocate social welfare initiatives.",
+    category: "social",
+    sourceNote: "PDF Page 2"
+  },
+  {
+    id: "1997-sakaldiha-college",
+    year: "1997",
+    titleHi: "सकलडीहा पी०जी० कालेज आजीवन सदस्यता",
+    titleEn: "Life Membership, Sakaldiha P.G. College",
+    organizationHi: "सकलडीहा पी०जी० कालेज, सकलडीहा, चन्दौली",
+    organizationEn: "Sakaldiha P.G. College, Sakaldiha, Chandauli",
+    roleHi: "आजीवन सदस्य",
+    roleEn: "Life Member",
+    descriptionHi: "ग्रामीण अंचल में उच्च शिक्षा के विस्तार और छात्र कल्याण कार्यक्रमों में आजीवन सहयोग।",
+    descriptionEn: "Contributed towards rural higher education and student scholarship programs in Chandauli district.",
+    category: "social",
+    sourceNote: "PDF Page 2"
+  },
+  {
+    id: "2000-banaras-mughal",
+    year: "2000",
+    titleHi: "बनारस मुगल एकेडमी आजीवन सदस्यता",
+    titleEn: "Life Membership, Banaras Mughal Academy",
+    organizationHi: "बनारस मुगल एकेडमी, उत्तर प्रदेश",
+    organizationEn: "Banaras Mughal Academy, Uttar Pradesh",
+    roleHi: "आजीवन सदस्य",
+    roleEn: "Life Member",
+    descriptionHi: "कला, साहित्य और सांस्कृतिक धरोहर के संरक्षण हेतु संस्था से जुड़ाव।",
+    descriptionEn: "Active patronage towards the preservation of regional art, literature, and historic heritage.",
+    category: "social",
+    sourceNote: "PDF Page 2"
+  },
+  {
+    id: "2001-jan-kalyan",
+    year: "2001",
+    titleHi: "जन-कल्याण परिषद उत्तर प्रदेश में मंत्री",
+    titleEn: "Minister / Secretary, Jan-Kalyan Parishad UP",
+    organizationHi: "जन-कल्याण परिषद, उत्तर प्रदेश",
+    organizationEn: "Jan-Kalyan Parishad, Uttar Pradesh",
+    roleHi: "मंत्री",
+    roleEn: "Secretary / Minister",
+    descriptionHi: "राज्य स्तर पर जनकल्याणकारी योजनाओं और समाज के कमजोर वर्गों की सहायता का संचालन।",
+    descriptionEn: "Coordinated statewide welfare programs assisting economically weaker sections and craftspeople.",
+    category: "social",
+    sourceNote: "PDF Page 2"
+  },
+  {
+    id: "2002-ramkatora-vyapar",
+    year: "2002",
+    titleHi: "रामकटोरा व्यापार मण्डल के संरक्षक",
+    titleEn: "Patron, Ramkatora Vyapar Mandal, Varanasi",
+    organizationHi: "रामकटोरा व्यापार मण्डल, वाराणसी",
+    organizationEn: "Ramkatora Vyapar Mandal, Varanasi",
+    roleHi: "संरक्षक",
+    roleEn: "Patron",
+    descriptionHi: "व्यापारियों के प्रमुख बाजार संगठन के संरक्षक के रूप में मार्गदर्शन और सहयोग।",
+    descriptionEn: "Guided local retail merchants on taxation, civic infrastructure, and market security.",
+    category: "trade",
+    sourceNote: "PDF Page 2"
+  },
+  {
+    id: "2003-lions-club",
+    year: "2003",
+    titleHi: "लायन्स क्लब कार्यकारिणी सदस्यता",
+    titleEn: "Executive Committee Member, Lions Club International",
+    organizationHi: "लायन्स क्लब (अन्तर्राष्ट्रीय संस्था)",
+    organizationEn: "Lions Club International",
+    roleHi: "सदस्य कार्यकारिणी",
+    roleEn: "Executive Member",
+    descriptionHi: "नेत्र चिकित्सा शिविर, रक्तदान और सामुदायिक स्वास्थ्य सेवाओं में सक्रिय योगदान।",
+    descriptionEn: "Active contribution in community health camps, eye care camps, and blood donation drives.",
+    category: "social",
+    sourceNote: "PDF Page 2"
+  },
+  {
+    id: "2004-rotary-club",
+    year: "2004",
+    titleHi: "रोटरी क्लब कार्यकारिणी सदस्यता",
+    titleEn: "Executive Committee Member, Rotary Club International",
+    organizationHi: "रोटरी क्लब (अन्तर्राष्ट्रीय संस्था)",
+    organizationEn: "Rotary Club International",
+    roleHi: "सदस्य कार्यकारिणी",
+    roleEn: "Executive Member",
+    descriptionHi: "पर्यावरण, शिक्षा और बाल स्वास्थ्य से संबंधित सेवा परियोजनाओं में सहभागिता।",
+    descriptionEn: "Participated in civic literacy drives, water sanitation, and child health initiatives.",
+    category: "social",
+    sourceNote: "PDF Page 2"
+  },
+  {
+    id: "2005-jai-khakibaba",
+    year: "2005",
+    titleHi: "जय खाकीबाबा इण्टर कालेज के अध्यक्ष",
+    titleEn: "President, Jai Khakibaba Inter College",
+    organizationHi: "जय खाकीबाबा इण्टर कालेज, सुरापुर, सुल्तानपुर",
+    organizationEn: "Jai Khakibaba Inter College, Surapur, Sultanpur",
+    roleHi: "अध्यक्ष",
+    roleEn: "President",
+    descriptionHi: "विद्यालय प्रबंधन का नेतृत्व करते हुए ग्रामीण विद्यार्थियों के लिए आधुनिक प्रयोगशाला और खेल सुविधाएं विकसित कराईं।",
+    descriptionEn: "Led educational administration, instituting science labs and student sports facilities.",
+    category: "social",
+    sourceNote: "PDF Page 2"
+  },
+  {
+    id: "2007-vaishya-biradari",
+    year: "2007–2010",
+    titleHi: "भारतीय वैश्य बिरादरी के प्रदेश महासचिव",
+    titleEn: "State General Secretary, Bharatiya Vaishya Biradari",
+    organizationHi: "भारतीय वैश्य बिरादरी, उत्तर प्रदेश",
+    organizationEn: "Bharatiya Vaishya Biradari, Uttar Pradesh",
+    roleHi: "प्रदेश महासचिव",
+    roleEn: "State General Secretary",
+    descriptionHi: "उत्तर प्रदेश में वैश्य समुदाय के सामाजिक और आर्थिक सशक्तिकरण हेतु जिला स्तर पर सम्मेलन आयोजित किए।",
+    descriptionEn: "Organized district-level conventions to advocate social coherence and entrepreneurship support.",
+    category: "social",
+    sourceNote: "PDF Page 2"
+  },
+  {
+    id: "2007-udyog-vyapar-mandal",
+    year: "2007–2012",
+    titleHi: "अखिल भारतीय उद्योग व्यापार मण्डल प्रदेश कार्य समिति",
+    titleEn: "State Working Committee, Akhil Bharatiya Udyog Vyapar Mandal",
+    organizationHi: "अखिल भारतीय उद्योग व्यापार मण्डल (पंजी.)",
+    organizationEn: "Akhil Bharatiya Udyog Vyapar Mandal",
+    roleHi: "प्रदेश कार्य समिति सदस्य",
+    roleEn: "State Working Committee Member",
+    descriptionHi: "व्यापारिक हितों की रक्षा, वैट व्यवस्था के सरलीकरण और मंडी शुल्क के समाधान हेतु नीतिगत भूमिका।",
+    descriptionEn: "Represented merchants on sales tax rationalization and market licensing reforms.",
+    category: "trade",
+    sourceNote: "PDF Page 2"
+  },
+  {
+    id: "2008-kadambari-award",
+    year: "2008",
+    titleHi: "कादम्बरी कला एवं नाट्य परिषद सम्मान",
+    titleEn: "Kadambari Kala & Natya Parishad Recognition",
+    organizationHi: "कादम्बरी कला, नाट्य परिषद, उत्तर प्रदेश",
+    organizationEn: "Kadambari Kala & Natya Parishad, UP",
+    roleHi: "सम्मानित",
+    roleEn: "Honored Recipient",
+    descriptionHi: "कला, रंगमंच और सांस्कृतिक गतिविधियों को संरक्षण व प्रोत्साहन देने हेतु विशिष्ट सम्मान।",
+    descriptionEn: "Honored for patronizing indigenous theater, folk arts, and cultural performance in UP.",
+    category: "awards",
+    sourceNote: "PDF Page 1"
+  },
+  {
+    id: "2009-vaishya-samaj-ratna",
+    year: "2009",
+    titleHi: "वैश्य समाज रत्न सम्मान एवं पत्रिका विमोचन",
+    titleEn: "Vaishya Samaj Ratna Honor by President of Mauritius",
+    organizationHi: "अखिल भारतीय वैश्य संगठन / वैश्य जागृति पत्रिका",
+    organizationEn: "All India Vaishya Federation / Vaishya Jagriti Patrika",
+    roleHi: "सम्मानित / विमोचन",
+    roleEn: "Honored Dignitary",
+    descriptionHi: "मॉरिशस गणराज्य के राष्ट्रपति महामहिम डॉ० अनिरुद्ध जगन्नाथ जी द्वारा 'वैश्य समाज रत्न' से अलंकृत एवं वैश्य जागृति पत्रिका का विमोचन।",
+    descriptionEn: "Conferred the 'Vaishya Samaj Ratna' award and magazine release by His Excellency Dr. Anerood Jugnauth, President of the Republic of Mauritius.",
+    category: "awards",
+    sourceNote: "PDF Page 1"
+  },
+  {
+    id: "2009-kashi-gaurav-ratna",
+    year: "2009",
+    titleHi: "काशी गौरव रत्न सम्मान - 2009",
+    titleEn: "Kashi Gaurav Ratna Award 2009",
+    organizationHi: "जनता हिताय समिति, उत्तर प्रदेश (पंजी.)",
+    organizationEn: "Janata Hitay Samiti, Uttar Pradesh",
+    roleHi: "सम्मानित",
+    roleEn: "Honored Recipient",
+    descriptionHi: "बौद्धिक, सामाजिक, सांस्कृतिक और साहित्यिक संस्था द्वारा काशी क्षेत्र के विशिष्ट व्यक्तित्व के रूप में सम्मान।",
+    descriptionEn: "Recognized with Kashi Gaurav Ratna for exemplary civic leadership and intellectual patronage.",
+    category: "awards",
+    sourceNote: "PDF Page 1"
+  },
+  {
+    id: "2009-vaishya-treasurer",
+    year: "2009–2012",
+    titleHi: "अखिल भारतीय वैश्य महासम्मेलन के प्रदेश कोषाध्यक्ष",
+    titleEn: "State Treasurer, All India Vaishya Mahasammelan",
+    organizationHi: "अखिल भारतीय वैश्य महासम्मेलन, उत्तर प्रदेश",
+    organizationEn: "All India Vaishya Mahasammelan, UP",
+    roleHi: "प्रदेश कोषाध्यक्ष",
+    roleEn: "State Treasurer",
+    descriptionHi: "संगठन के वित्तीय प्रबंधन और सेवा परियोजनाओं के सुचारु संचालन की जिम्मेदारी संभाली।",
+    descriptionEn: "Managed organization finances, educational fund disbursements, and convention logistics.",
+    category: "social",
+    sourceNote: "PDF Page 2"
+  },
+  {
+    id: "2011-reda-vp",
+    year: "2011",
+    titleHi: "रियल स्टेट डेवलपर्स एसोसिएशन के प्रदेश उपाध्यक्ष",
+    titleEn: "State Vice President, Real Estate Developers Association",
+    organizationHi: "रियल स्टेट डेवलपर्स एसोसिएशन, उत्तर प्रदेश (REDA)",
+    organizationEn: "Real Estate Developers Association, UP",
+    roleHi: "प्रदेश उपाध्यक्ष",
+    roleEn: "State Vice President",
+    descriptionHi: "व्यवस्थित शहरीकरण, बुनियादी ढांचे के विकास और रियल एस्टेट क्षेत्र के पारदर्शी नियमन हेतु विचार रखे।",
+    descriptionEn: "Advocated structured urban planning guidelines and transparent development norms.",
+    category: "trade",
+    sourceNote: "PDF Page 1"
+  },
+  {
+    id: "2012-khadi-board",
+    year: "2012",
+    titleHi: "उपाध्यक्ष (राज्यमंत्री स्तर), उ०प्र० खादी एवं ग्रामोद्योग बोर्ड",
+    titleEn: "Vice Chairman (MoS Rank), UP Khadi & Village Industries Board",
+    organizationHi: "उत्तर प्रदेश सरकार (खादी एवं ग्रामोद्योग बोर्ड)",
+    organizationEn: "Government of Uttar Pradesh",
+    roleHi: "उपाध्यक्ष (राज्यमंत्री स्तर)",
+    roleEn: "Vice Chairman (Minister of State Rank)",
+    descriptionHi: "ग्रामीण कुटीर उद्योगों, पारंपरिक बुनकरों और खादी उत्पादन को बढ़ावा देने के लिए राज्यमंत्री स्तर पर कार्य किया।",
+    descriptionEn: "Administered state-supported initiatives for cottage industries, village weavers, and rural artisans with Minister of State rank.",
+    category: "political",
+    sourceNote: "PDF Page 1, News & Wikipedia"
+  },
+  {
+    id: "2013-vaishya-state-pres",
+    year: "2013–2022",
+    titleHi: "प्रदेश अध्यक्ष, अखिल भारतीय वैश्य महासम्मेलन उ०प्र०",
+    titleEn: "State President, All India Vaishya Mahasammelan UP",
+    organizationHi: "अखिल भारतीय वैश्य महासम्मेलन, उत्तर प्रदेश",
+    organizationEn: "All India Vaishya Mahasammelan, UP",
+    roleHi: "प्रदेश अध्यक्ष",
+    roleEn: "State President",
+    descriptionHi: "लगभग एक दशक तक प्रदेश अध्यक्ष के रूप में सभी 75 जनपदों में संगठन का विस्तार किया और विशाल सम्मेलनों का सफल आयोजन किया।",
+    descriptionEn: "Steered the state federation for nearly a decade across all 75 districts of Uttar Pradesh.",
+    category: "social",
+    image: "/images/gallery/vaishya-mahasammelan-convention-stage.jpg",
+    sourceNote: "PDF Page 1"
+  },
+  {
+    id: "2013-vyapar-national-vp",
+    year: "2013–2023",
+    titleHi: "राष्ट्रीय उपाध्यक्ष, भारतीय उद्योग व्यापार मण्डल (BJP समर्थक)",
+    titleEn: "National Vice President & 3-Term State President, Bharatiya Udyog Vyapar Mandal",
+    organizationHi: "भारतीय उद्योग व्यापार मण्डल",
+    organizationEn: "Bharatiya Udyog Vyapar Mandal",
+    roleHi: "राष्ट्रीय उपाध्यक्ष एवं लगातार 3 बार निर्विरोध प्रदेश अध्यक्ष",
+    roleEn: "National VP & 3-time Unanimously Elected State President",
+    descriptionHi: "व्यापारियों के राष्ट्रीय मंच पर शीर्ष नेतृत्व करते हुए जीएसटी सरलीकरण और व्यापारी सुरक्षा नीतियों पर केंद्र व राज्य सरकारों से संवाद किया।",
+    descriptionEn: "Unanimously elected State President for 3 consecutive terms (2013–2023), representing trade concerns nationally.",
+    category: "trade",
+    image: "/images/gallery/with-union-minister-piyush-goyal.jpg",
+    sourceNote: "PDF Page 1"
+  },
+  {
+    id: "2024-upsic-appointment",
+    year: "2024",
+    exactDate: "13 सितम्बर 2024",
+    titleHi: "उपाध्यक्ष (राज्यमंत्री स्तर), उत्तर प्रदेश लघु उद्योग निगम",
+    titleEn: "Vice Chairman (MoS Rank), UP Small Industries Corporation",
+    organizationHi: "उत्तर प्रदेश सरकार (UPSIC)",
+    organizationEn: "Government of Uttar Pradesh",
+    roleHi: "उपाध्यक्ष (राज्यमंत्री स्तर)",
+    roleEn: "Vice Chairman (Minister of State Rank)",
+    descriptionHi: "मुख्यमंत्री योगी आदित्यनाथ जी की सरकार द्वारा उत्तर प्रदेश लघु उद्योग निगम लिमिटेड के उपाध्यक्ष पद पर नियुक्ति। प्रदेश के एमएसएमई उद्योगों और औद्योगिक अवस्थापना को गति देने की जिम्मेदारी।",
+    descriptionEn: "Appointed Vice Chairman of Uttar Pradesh Small Industries Corporation Ltd. (UPSIC) with Minister of State status by the Government of Uttar Pradesh.",
+    category: "political",
+    image: "/images/gallery/walking-with-cm-yogi.jpg",
+    sourceNote: "PDF Page 1, TarunMitra, UPSIC Official Portal"
+  }
+];

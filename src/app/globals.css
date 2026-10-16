@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --deep-navy: #111827;
+    --charcoal: #1F2937;
+    --warm-ivory: #FAF8F4;
+    --pure-white: #FFFFFF;
+    --saffron-orange: #F4510B;
+    --saffron-hover: #D94205;
+    --muted-gold: #C6A15B;
+    --subtle-green: #168653;
+    --muted-gray: #667085;
+    --light-border: #E7E5E4;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    background-color: var(--warm-ivory);
+    color: var(--deep-navy);
+    font-family: var(--font-inter), var(--font-devanagari), system-ui, -apple-system, sans-serif;
+    line-height: 1.65;
+  }
+
+  /* Hindi Devanagari Typography Optimization */
+  :lang(hi) {
+    font-family: var(--font-devanagari), var(--font-inter), system-ui, sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--deep-navy);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Subtle editorial transitions & components */
+.editorial-container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .editorial-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .editorial-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Restrained accent utilities */
+.border-light {
+  border-color: #E7E5E4;
+}
+
+.text-muted-editorial {
+  color: #667085;
+}
+
+.bg-warm-ivory {
+  background-color: #FAF8F4;
+}
+
+/* Lightbox Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-lightbox {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Accessibility Focus Ring */
+*:focus-visible {
+  outline: 2px solid #F4510B;
+  outline-offset: 2px;
+}
