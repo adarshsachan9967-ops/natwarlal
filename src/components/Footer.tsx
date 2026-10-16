@@ -170,10 +170,6 @@ export default function Footer() {
               {t("अभिगम्यता कथन", "Accessibility")}
             </Link>
             <span>•</span>
-            <Link href="/admin/login" className="hover:text-slate-200 transition-colors">
-              {t("प्रशासन (CMS Login)", "CMS Login")}
-            </Link>
-            <span>•</span>
             <LanguageToggle className="scale-90 bg-slate-900 border-slate-800 text-slate-300" />
           </div>
         </div>
